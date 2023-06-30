@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar"></div>
+        <div class="content">
+            <form class="form" method="post" name="login-form" action="login.php">
+                <h2>Log in</h2>
+                <input type="text" class="login-input" placeholder="Username or Email" name="username" required />
+                <input type="password" class="login-input" placeholder="Password" name="password" required />
+                <button class="btnn" type="submit">Login</button>
+                <p class="link">Don't have an account?<br>
+                    <a href="signup.php">Sign up</a>
+                </p>
+                <?php if (!empty($error)) : ?>
+                    <p class="error"><?php echo $error; ?></p>
+                <?php endif; ?>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+CREATE TABLE clients (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    block INT (100) NOT NULL,
+    lot INT (100) NOT NULL,
+    name VARCHAR (100) NOT NULL,
+    email VARCHAR (200) NOT NULL UNIQUE,
+    phone VARCHAR(20) NULL,
+    previous VARCHAR(255) NOT NULL,
+    present VARCHAR(255) NOT NULL,
+    consumption VARCHAR(255) NOT NULL,
+    amount INT(255) NOT NULL,
+    unpaid INT(255) NULL,
+    total VARCHAR(255) NOT NULL,
+    remarks VARCHAR(255) NULL,
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+
+INSERT INTO clients (id, block, lot, name, email, phone, previous, present, consumption, amount, unpaid, total, remarks)
+VALUES
+('1', '1', '1', 'josh', 'bill.gates@microsoft.com', '+123456789', '100', '200', '20', '1000', '0', '1000', 'none'),
+('2', '1', '2', 'josh', 'gates@microsoft.com', '+1456789', '100', '200', '20', '1000', '0', '1000', 'none'),
+('3', '1', '3', 'josh', 'biles@microsoft.com', '+156789', '100', '200', '20', '1000', '0', '1000', 'none'),
+('4', '1', '4', 'josh', '@microsoft.com', '+123456789', '100', '200', '20', '1000', '0', '1000', 'none'),
+('5', '2', '1', 'josh', 'bill.gatecrosoft.com', '+123456789', '100', '200', '20', '1000', '0', '1000', 'none'),
+('6', '2', '2', 'josh', 'bill.gates@mrosoft.com', '+123456789', '100', '200', '20', '1000', '0', '1000', 'none');

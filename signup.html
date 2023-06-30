@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Signup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar"></div>
+        <div class="content">
+            <form class="form" name="signup-form" action="signup.php" method="POST">
+                <h2>Sign up</h2>
+                <p class="error"><?php echo $error; ?></p>
+                <p class="success"><?php echo $success; ?></p>
+                <input type="text" placeholder="First name" id="first name" name="first_name" value="<?php echo $first_name; ?>" required />
+                <input type="text" placeholder="Last name" id="last_name" name="last_name" value="<?php echo $last_name; ?>" required />
+                <input type="text" placeholder="Email" id="email" name="email" value="<?php echo $email; ?>" required />
+                <input type="text" placeholder="Username" id="username" name="username" value="<?php echo $username; ?>" required />
+                <input type="password" placeholder="Password" id="password" name="password" required />
+                <input type="password" placeholder="Confirm Password" id="confirm-password" name="confirm_password" required />
+                <button class="btnn" type="submit" name="submit">Submit</button>
+                <p><br>Already have an account? <a href="login.html">Log in</a><br><br><p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

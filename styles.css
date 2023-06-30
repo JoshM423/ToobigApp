@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    background-image: url("logo2.png");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar {
+    width: 120px;
+    height: 140px;
+    margin: auto;
+}
+
+.content {
+    width: 1300px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.form {
+    width: 250px;
+    height: 550px;
+    background: linear-gradient(to top, rgba(45, 132, 233, 0.8) 100%, rgba(0, 0, 0, 0.8) 50%);
+    position: absolute;
+    top: -85px;
+    left: 850px;
+    transform: translate(0%, -5%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2 {
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #000;
+    font-size: 22px;
+    background-color: #87CEEB;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input {
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 2px solid #000;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #000;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #000;
+    font-family: Arial;
+}
+
+.btnn {
+    width: 240px;
+    height: 40px;
+    background: #87CEEB;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    transition: 0.4s ease;
+}
+
+.btnn:hover {
+    background: #fff;
+    color: #fff;
+}
+
+.btnn a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.form .link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form .link a {
+    text-decoration: none;
+    color: #3E1964;
+}
+
+.liw {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.icons ion-icon {
+    color: #000;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-top: 0px;
+    transition: 0.3s ease;
+}
+
+.icons ion-icon:hover {
+    color: #fff;
+}
+
+p {
+    text-align: center;
+    padding-top: 1px;
+    font-size: 15px;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
